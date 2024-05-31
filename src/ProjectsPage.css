@@ -1,0 +1,17 @@
+#projects{
+    background-color: var(--secondary-color);
+    height: fit-content;
+    padding: 50px 0px 100px 0px;
+    /* there is no need for margin because i want the projects page and the contact me to be close (beacuse of the background color) */
+}
+
+.projects_container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 100px 0px;
+    margin: 100px 0px 0px 0px;
+}
+

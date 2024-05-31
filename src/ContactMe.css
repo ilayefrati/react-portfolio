@@ -1,0 +1,85 @@
+#contact_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: var(--primary-color);
+}
+
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 15px; */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 30px 10px;
+    gap: 20px 15px; /* i added gap so there will be always space horizontally and vertically */
+}
+
+.contact_me_line{
+    width: 80%;
+    margin: 0 0;
+}
+
+.credit{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* width: 87%; */
+    /* border-top: 1px solid #ffffff; */
+    /* background-color: #333; */
+    /* margin: 0 auto; */
+    gap: 25px;
+    padding: 10px 0;
+    color: white;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    /* הקלאס הזו מסתירה את הטקסט כדי שיהיה רק לאלה ששומעים את המסך */
+}
+
+.custom-shape-divider-top-1715437211 {
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0; */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1715437211 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-top-1715437211 .shape-fill {
+    fill: var(--secondary-color);
+}
+
+.credit a{
+    font-size: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .credit a{
+        font-size: 3rem;
+    }
+}

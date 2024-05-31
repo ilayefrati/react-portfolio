@@ -1,0 +1,35 @@
+#vertical_navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 250px;
+    background-color: #333;
+    height: 100dvh;
+    justify-content: flex-start;
+    z-index: 3;
+    padding-top: 20%;
+}
+
+#vertical_navbar li{
+    width: 100%;
+    height: fit-content;
+    padding: 15px 25px;
+    list-style: none;
+}
+
+#vertical_navbar li:hover {
+    background: #272c30;
+    border-left: 3px solid var(--secondary-color);  
+}
+
+#vertical_navbar li:hover a{
+    color: var(--secondary-color);
+}
+
+#vertical_navbar li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}

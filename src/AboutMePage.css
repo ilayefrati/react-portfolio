@@ -1,0 +1,42 @@
+
+#about_me {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "description description_img";
+    justify-items: center;
+    align-items: center;
+    height: fit-content;
+    padding: 0px 50px;
+    margin: 50px 0 100px 0;
+}
+
+#about_me h3 {
+    grid-area: description;
+    line-height: 2;
+    color: #333;
+    font-weight: 400;
+}
+
+
+#about_me img {
+    grid-area: description_img;
+    width: 60%;
+    overflow: hidden;
+    /* clip-path: circle(); */
+    justify-self: flex-end;  /* so the space between the text and the border and the image and the border will be equal */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #about_me {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "description_img"
+            "description";
+        gap:20px 0px;
+    }
+
+    #about_me img{
+        justify-self: center;
+    }
+}

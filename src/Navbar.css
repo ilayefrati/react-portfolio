@@ -1,0 +1,64 @@
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* grid-area: nav; */
+    /* background-color: rgb(20, 40, 84); */
+    /* height: 90px; */
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    align-items: center;
+    text-align: center;
+    gap: 0px 5px;
+    background-color: #333;
+    /* הוספתי גאפ כדי שהם לא יהיו ממש צמודים לא משנה באיזה רזולוצייה */
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li a {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    /* top: 25%; */
+    font-weight: bold;
+    /* direction: rtl; */
+    padding-bottom: 5px;
+}
+
+#navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    /* Change this color to your desired hover color */
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+/* Hover animation */
+#navbar li a:hover::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+}
