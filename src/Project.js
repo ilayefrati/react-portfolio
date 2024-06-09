@@ -7,7 +7,16 @@ function Project(props) {
     react_background = true;
   }
   return (
-    <div className="project_container" style={{ backgroundImage: `url(${react_background ? 'images/project_container2.png' : 'images/project_container1.png'})` }}>
+    <div
+      className="project_container"
+      style={{
+        backgroundImage: `url(${
+          react_background
+            ? "images/project_container2.png"
+            : "images/project_container1.png"
+        })`,
+      }}
+    >
       <h3>{props.title}</h3>
       <p className="project-tech">{props.tech}</p>
       <hr className="project_line" />
@@ -15,7 +24,9 @@ function Project(props) {
       {props.confidential ? (
         <p className="confidential">*NO LINK DUE TO CONFIDENTIAL REASONS*</p>
       ) : (
-        <button className="project_button">Visit Website {'>'} </button>
+        <a href="https://www.safety-car.co.il/" target="_blank">
+          <button className="project_button">Visit Website {">"} </button>
+        </a>
       )}
     </div>
   );

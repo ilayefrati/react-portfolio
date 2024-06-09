@@ -24,6 +24,7 @@ function IconText(props) {
         style={{ textDecoration: "none", color: "#ffffff" }}
         href={href}
         aria-label={aria_label}
+        target="_blank"
       >
         {props.text}
       </a>

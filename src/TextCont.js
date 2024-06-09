@@ -14,7 +14,7 @@ function TextCont(){
                     <Button text="Download CV" />
                 </a>
 
-                <a href="#contact_me" onClick={smoothScroll}>  {/* change the # to contact me */}
+                <a href="#contact_me" onClick={smoothScroll}>  
                     <Button text = "Lets Work Together!"/>
                 </a>
             </div>

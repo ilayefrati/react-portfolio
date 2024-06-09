@@ -8,21 +8,21 @@ function ProjectsPage() {
     title: "safety-car.co.il",
     tech: "built using HTML, CSS and Javascript",
     description:
-      "Lorem ipsum dolor sit amet. Et delectus modi et natus obcaecati aut nostrum",
+      'Containes information about the company "תעבורה על בטוח", their clients, the services they offer and more',
     confidential: false,
   };
   let project2 = {
     title: "Givati unit website",
     tech: "built using React Js",
     description:
-      "Lorem ipsum dolor sit amet. Et delectus modi et natus obcaecati aut nostrum",
+    "Showcasing Givati unit abilities and serves as a data management platform for the unit",
     confidential: true,
   };
   let project3 = {
     title: "Hoshen unit website",
     tech: "built using HTML, CSS and Javascript",
     description:
-      "Lorem ipsum dolor sit amet. Et delectus modi et natus obcaecati aut nostrum",
+      "Showcasing Hoshen unit capabilities and gives information about the unit. serves as a data management platform for Hoshen",
     confidential: true,
   };
   let project_arr = [proj_obj, project2, project3];
