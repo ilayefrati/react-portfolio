@@ -40,3 +40,32 @@
         justify-self: center;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #about_me {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "description_img"
+            "description";
+        gap:20px 0px;
+    }
+
+    #about_me img{
+        justify-self: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #about_me {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "description_img"
+            "description";
+        gap:20px 0px;
+    }
+
+    #about_me img{
+        justify-self: center;
+        width: 40%;
+    }
+}

@@ -88,3 +88,36 @@ a {
         font-size: 2.5rem;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 11px;
+    }
+    
+    h3{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+}

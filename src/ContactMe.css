@@ -83,3 +83,15 @@
         font-size: 3rem;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .credit a{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .credit a{
+        font-size: 2.5rem;
+    }
+}

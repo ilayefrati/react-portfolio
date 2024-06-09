@@ -12,7 +12,7 @@
     align-items: center;
     text-align: center;
     gap: 0px 5px;
-    background-color: #333;
+    background-color: #333333bd;
     /* הוספתי גאפ כדי שהם לא יהיו ממש צמודים לא משנה באיזה רזולוצייה */
 }
 
