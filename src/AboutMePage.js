@@ -10,7 +10,7 @@ function AboutMePage(){
             for the IDF, where I have successfully developed numerous projects. 
             I am committed to continuously learning new technologies and incorporating them into my projects.
             </h3>
-            <img src="images/about_me_img.png"/>
+            <img src="images/about_me_img.png" alt="my portfolio picture"/>
         </div>
     );
 }

@@ -1,24 +1,55 @@
 import React from "react";
 import VerticalNavbar from "./VerticalNavbar";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function NavbarContainer() {
   const [navbarDisplay, setNavbarDisplay] = useState(false);
-  function handleHamburgerClick() {
+  
+  function handleHamburgerClick(event) {
+    event.stopPropagation(); // Prevent the click event from bubbling up to the document body
     setNavbarDisplay(!navbarDisplay);
-    // what we did here was to create a parent component that includes the hamburger menu and the navbar. this components holds the state that is
-    //  responsible for the display of the navbar and passes it down as a prop.
-    // also, it passes the function that toggels this state so we can use it in the hamburger menu component (it changes the state of the navbar container)
-    // this prevents circular depenendencies between components
   }
+
+  useEffect(() => {
+    const handleclick = (event) => {
+      event.stopPropagation();
+      if (navbarDisplay) {
+        // console.log("yes");
+        const verticalNavbar = document.getElementById("vertical_navbar");
+        if (verticalNavbar && !verticalNavbar.contains(event.target)) {
+          setNavbarDisplay(false);
+        }
+      }
+    };
+    // const handlescroll = (event) =>{
+    //   event.stopPropagation();
+    //   if(navbarDisplay){
+    //     const verticalNavbar = document.getElementById("vertical_navbar");
+    //     if(verticalNavbar){
+    //       setNavbarDisplay(false);
+    //     }
+    //   }
+    // }
+
+    //i decided not to add the scroll event beacuse it affects the click event and closes the navbar when youre pressing the <a></a> tags (because of the smooth scroll function) 
+    document.body.addEventListener('click', handleclick);
+    // window.addEventListener('scroll',handlescroll);
+
+
+    return () => {
+      document.body.removeEventListener('click', handleclick);
+      // window.removeEventListener('scroll',handlescroll)
+    };
+  }, [navbarDisplay]);
+
   return (
     <>
       {navbarDisplay ? (
         <VerticalNavbar
-        navbarDisplay={navbarDisplay}
-        handleHamburgerClick={handleHamburgerClick}
-      />
+          navbarDisplay={navbarDisplay}
+          handleHamburgerClick={handleHamburgerClick}
+        />
       ) : (
         <HamburgerMenu onClick={handleHamburgerClick} />
       )}
