@@ -13,7 +13,7 @@ function AboutMePage() {
                 observer.unobserve(ref.current); 
             }
         }, {
-            threshold: 0.7,
+            threshold: 0.1,
         });
 
         if (ref.current) {

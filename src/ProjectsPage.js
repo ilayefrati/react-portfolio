@@ -16,6 +16,7 @@ function ProjectsPage() {
       },
       {
         threshold: 0.1,
+        // fixes the problem which you cant see the transition on mobile
       }
     );
 
