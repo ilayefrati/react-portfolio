@@ -6,15 +6,17 @@ function Project(props) {
   if (props.tech.includes("React")) {
     react_background = true;
   }
+  
   return (
     <div
-      className="project_container"
+      className={props.visible ? "project_container slide_up" : "project_container"}
       style={{
         backgroundImage: `url(${
           react_background
             ? "images/project_container2.png"
             : "images/project_container1.png"
         })`,
+        transitionDelay: `${props.transitionDelay}s`, // Set transition delay based on prop
       }}
     >
       <h3>{props.title}</h3>

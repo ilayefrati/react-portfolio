@@ -1,4 +1,3 @@
-
 #about_me {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -16,6 +15,10 @@
     line-height: 2;
     color: #333;
     font-weight: 400;
+    left: -100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    position: relative;
 }
 
 
@@ -25,6 +28,21 @@
     overflow: hidden;
     /* clip-path: circle(); */
     justify-self: flex-end;  /* so the space between the text and the border and the image and the border will be equal */
+    right: -100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+#about_me img.slide_left{
+    opacity: 100%;
+    right: 0%;
+}
+
+
+#about_me h3.slide_right{
+    opacity: 100%;
+    left: 0%;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -16,6 +16,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     padding: 40px 40px 20px 30px; /* the padding matches with the different width of the borders */
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.project_container.slide_up{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .project-tech{

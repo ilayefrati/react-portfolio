@@ -1,10 +1,94 @@
-#hamburger_menu {
+/* #hamburger_menu {
     font-size: 4rem;
     display: block;
     position: absolute;
     left: 10px;
     top: 10px;
-    z-index: 1;
+    z-index: 4;
+    incremented the z-index so the hamburger menu will be above the vertical navbar
     color: white;
     cursor: pointer;
+} */
+
+#hamburger_menu {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 4;
+    /*incremented the z-index so the hamburger menu will be above the vertical navbar */
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .45s ease-in-out;
+    -moz-transition: .45s ease-in-out;
+    -o-transition: .45s ease-in-out;
+    transition: .45s ease-in-out;
+    /* transition-delay: 0.5s; */
+    cursor: pointer;
+}
+
+#hamburger_menu span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    transition-delay: 0.5s;
+    /* wait for the vertical navbar animation */
+
+}
+
+
+
+#hamburger_menu span:nth-child(1) {
+    top: 0px;
+}
+
+#hamburger_menu span:nth-child(2),
+#hamburger_menu span:nth-child(3) {
+    top: 18px;
+}
+
+#hamburger_menu span:nth-child(4) {
+    top: 36px;
+}
+
+#hamburger_menu.click span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#hamburger_menu.click span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburger_menu.click span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#hamburger_menu.click span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
