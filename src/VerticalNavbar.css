@@ -8,6 +8,8 @@
     justify-content: flex-start;
     z-index: 3;
     padding-top: 20%;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
 }
 
 #vertical_navbar li{
@@ -32,4 +34,8 @@
     cursor: pointer;
     position: relative;
     font-weight: bold;
+}
+
+#vertical_navbar.open{
+    left: 0%;
 }

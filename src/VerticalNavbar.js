@@ -7,7 +7,9 @@ function VerticalNavbar(props) {
   return (
     <nav
       id="vertical_navbar"
-      style={{ display: props.navbarDisplay ? "flex" : "none" }}
+      // style={{ display: props.navbarDisplay ? "flex" : "none" }}
+      // we removed the display propery here because the visabillity is controlled by css classes.
+      className={props.navbarDisplay ? "open" : ""}
     >
       <HamburgerMenu onClick={props.handleHamburgerClick} />
       <li>

@@ -45,15 +45,13 @@ function NavbarContainer() {
 
   return (
     <>
-      {navbarDisplay ? (
-        <VerticalNavbar
-          navbarDisplay={navbarDisplay}
-          handleHamburgerClick={handleHamburgerClick}
-        />
-      ) : (
-        <HamburgerMenu onClick={handleHamburgerClick} />
-      )}
+      <HamburgerMenu onClick={handleHamburgerClick} />
+      <VerticalNavbar
+        navbarDisplay={navbarDisplay}
+        handleHamburgerClick={handleHamburgerClick}
+      />
     </>
+    // instead of conditionally rendering the navbar, we always render it and controll its visability with css classes and the navbarDisplay prop. when the navbae wasnt renderd, we couldnt add classes to it, what made it difficult adding css animations.
   );
 }
 
