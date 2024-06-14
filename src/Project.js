@@ -10,6 +10,7 @@ function Project(props) {
   return (
     <div
       className={props.visible ? "project_container slide_up" : "project_container"}
+      onClick={""}
       style={{
         backgroundImage: `url(${
           react_background
