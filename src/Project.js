@@ -9,7 +9,7 @@ function Project(props) {
   
   return (
     <div
-      className={props.visible ? "project_container slide_up" : "project_container"}
+      className={`project_container ${props.visible ? "slide_up" : ""}`}
       onClick={()=>{}}
       style={{
         backgroundImage: `url(${
@@ -17,7 +17,7 @@ function Project(props) {
             ? "images/project_container2.png"
             : "images/project_container1.png"
         })`,
-        transitionDelay: `${props.transitionDelay}s`, // Set transition delay based on prop
+        transitionDelay: `${props.animationDelay}s`, // Set transition delay based on prop
       }}
     >
       <h3>{props.title}</h3>
