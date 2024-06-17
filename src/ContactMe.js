@@ -54,6 +54,15 @@ function ContactMe() {
           <span className="visually-hidden">LinkedIn</span>
           {/* <!-- חייב לשים טקסט בשביל הנגישות לאלה ששומעים מהמסך - את הטקסט הזה אי אפשר לראות בגלל הקלאס --> */}
         </a>
+        <a
+          aria-label="Github: Ilay Efrati"
+          href="https://github.com/ilayefrati"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-github" style={{ color: "#ffffff" }}></i>
+          <span className="visually-hidden">Github</span>
+        </a>
       </div>
     </div>
   );
