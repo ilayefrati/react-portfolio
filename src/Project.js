@@ -17,7 +17,7 @@ function Project(props) {
             ? "images/project_container2.png"
             : "images/project_container1.png"
         })`,
-        transitionDelay: `${props.animationDelay}s`, // Set transition delay based on prop
+        transitionDelay: `${props.transitionDelay}s`, // Set transition delay based on prop
       }}
     >
       <h3>{props.title}</h3>
