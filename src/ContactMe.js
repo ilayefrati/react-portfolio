@@ -55,7 +55,7 @@ function ContactMe() {
           {/* <!-- חייב לשים טקסט בשביל הנגישות לאלה ששומעים מהמסך - את הטקסט הזה אי אפשר לראות בגלל הקלאס --> */}
         </a>
         <a
-          aria-label="Github: Ilay Efrati"
+          aria-label="Github: ilayefrati"
           href="https://github.com/ilayefrati"
           target="_blank"
           rel="noopener noreferrer"
