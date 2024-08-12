@@ -33,15 +33,17 @@ function AboutMePage() {
   return (
     <div id="about_me" ref={ref}>
       <h3 className={visible ? "slide_right" : ""}>
-        Hi, I'm <b>Ilay Efrati</b> — a tech unit veteran and highly motivated front-end
-        developer with over 2 years of experience. I have a strong passion for
-        web development and a solid technical foundation, specializing in <b>React</b>,
-        <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Git</b>, and <b>GitHub</b>. 
-        I'm skilled in developing complex projects while prioritizing excellence in user experience,
-        performance, and responsiveness. I'm committed to continuous learning
-        and integrating new technologies into my work. As a team-oriented
-        developer with leadership capabilities, I thrive in collaborative
-        environments and enjoy turning challenging ideas into reality.
+        Hi, I'm <b>Ilay Efrati</b> — a tech unit veteran and highly motivated
+        front-end developer with over 2 years of experience, during which I
+        developed numerous projects. I have a strong passion for web development
+        and a solid technical foundation, specializing in <b>React</b>,{" "}
+        <b>HTML</b>,<b>CSS</b>, <b>JavaScript</b>, <b>Git</b>, and <b>GitHub</b>
+        . I'm skilled in developing complex projects while prioritizing
+        excellence in user experience, performance, and responsiveness. I'm
+        committed to continuous learning and integrating new technologies into
+        my work. As a team-oriented developer with leadership capabilities, I
+        thrive in collaborative environments and enjoy turning challenging ideas
+        into reality.
       </h3>
       <img
         src="images/about_me_img.png"
