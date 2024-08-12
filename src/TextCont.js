@@ -10,7 +10,7 @@ function TextCont(){
             <h2>if you are looking for someone that will make your ideas come to life,
                  you came to the right place.</h2>
             <div className="buttons">
-                <a href="https://drive.google.com/file/d/1SUynO11pUAi0_Iqb-jGs3TjHsQk_ji6C/view?usp=drive_link" download="ilay_cv"> {/* the download property should be on the <a> */}
+                <a href="https://drive.google.com/uc?export=download&id=1SUynO11puAio_J6s3THSqk_jl6C" download="ilay_cv"> {/* the download property should be on the <a> */}
                     <Button text="Download CV" />
                 </a>
 
