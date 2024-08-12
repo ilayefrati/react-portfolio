@@ -5,8 +5,8 @@ function IconText(props) {
   let href;
   let aria_label;
   if(props.icon.includes("envelope")){
-    href = "mailto:ilay2092003@gmail.com"
-    aria_label ="Email: ilay2092003@gmail.com"
+    href = "mailto:ilayefrati1@gmail.com"
+    aria_label ="Email: ilayefrati1@gmail.com"
 }
   else if(props.icon.includes("phone")){
     href = "tel:0533409049"

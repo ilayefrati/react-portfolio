@@ -6,7 +6,7 @@ function ContactMe() {
   let phone = { icon: "fa-solid fa-phone", text: "053-3409049" };
   let envelope = {
     icon: "fa-regular fa-envelope",
-    text: "ilay2092003@gmail.com",
+    text: "ilayefrati1@gmail.com",
   };
   let address = { icon: "fa-solid fa-location-dot", text: "Meitar, Israel" };
   let icon_list = [phone, envelope, address];

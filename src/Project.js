@@ -27,7 +27,7 @@ function Project(props) {
       {props.confidential ? (
         <p className="confidential">*NO LINK DUE TO CONFIDENTIAL REASONS*</p>
       ) : (
-        <a href="https://www.safety-car.co.il/" target="_blank">
+        <a href={props.link} target="_blank">
           <button className="project_button">Visit Website {">"} </button>
         </a>
       )}

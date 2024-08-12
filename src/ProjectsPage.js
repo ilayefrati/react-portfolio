@@ -37,6 +37,7 @@ function ProjectsPage() {
     description:
       'Containes information about the company "תעבורה על בטוח", their clients, the services they offer and more',
     confidential: false,
+    link:"https://www.safety-car.co.il/",
     transitionDelay:0,
   };
   let project2 = {
@@ -56,7 +57,16 @@ function ProjectsPage() {
     transitionDelay:0.6,
 
   };
-  let project_arr = [project1, project2, project3];
+  let project4 = {
+    title: "zivcar.co.il",
+    tech: "built using React Js",
+    description:
+      "A corporate website that provides detailed information about the Ziv system, a tool designed to handle and manage car fleets.",
+    confidential: false,
+    link:"https://zivcar.co.il/",
+    transitionDelay:0.9,
+  };
+  let project_arr = [project1, project2, project3, project4];
   return (
     <div id="projects" ref={ref}>
       <ProjectsTitle />
@@ -69,6 +79,7 @@ function ProjectsPage() {
               tech={proj_obj.tech}
               description={proj_obj.description}
               confidential={proj_obj.confidential}
+              link={proj_obj.link}
               visible={visible}
               transitionDelay = {proj_obj.transitionDelay}
             />
