@@ -16,7 +16,7 @@ function TextCont() {
           href="https://drive.google.com/uc?export=download&id=1SUynO11pUAi0_Iqb-jGs3TjHsQk_ji6C"
           download="ilay_cv"
         >
-          <Button text="Download CV" />
+          <Button text="Download my CV" />
         </a>
 
         <a href="#contact_me" onClick={smoothScroll}>
