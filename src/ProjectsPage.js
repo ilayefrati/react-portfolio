@@ -35,38 +35,45 @@ function ProjectsPage() {
     title: "safety-car.co.il",
     tech: "built using HTML, CSS and Javascript",
     description:
-      'Containes information about the company "תעבורה על בטוח", their clients, the services they offer and more',
+      `A corporate website for "תעבורה על בטוח," showcasing the company's services, clients, personnel and additional information. The website was optimized with effective SEO strategies and engaging content, resulting in a 40% increase in visitor traffic and enhanced user engagement.`,
     confidential: false,
-    link:"https://www.safety-car.co.il/",
-    transitionDelay:0,
+    link: "https://www.safety-car.co.il/",
+    transitionDelay: 0,
   };
   let project2 = {
     title: "Givati unit website",
     tech: "built using React Js",
     description:
-      "Showcasing Givati unit abilities and serves as a data management platform for the unit",
+      "A robust, high-functionality website for the Givati unit within the confidential IDF network, designed to showcase the unit's capabilities and serve as a comprehensive data management platform.",
     confidential: true,
-    transitionDelay:0.3,
+    transitionDelay: 0.2,
   };
   let project3 = {
     title: "Hoshen unit website",
     tech: "built using HTML, CSS and Javascript",
     description:
-      "Showcasing Hoshen unit capabilities and gives information about the unit. serves as a data management platform for Hoshen",
+      "An advanced website developed for the Hoshen unit within the confidential IDF network, highlighting the unit's achievements, providing essential resources, and streamlining internal data management processes.",
     confidential: true,
-    transitionDelay:0.6,
-
+    transitionDelay: 0.4,
   };
   let project4 = {
     title: "zivcar.co.il",
     tech: "built using React Js",
     description:
-      "A corporate website that provides detailed information about the Ziv system, a tool designed to handle and manage car fleets.",
+      "A sales site for the Ziv system, a comprehensive car fleet management framework designed to streamline operations and improve efficiency. This website enhanced user experience, increased customer engagement, and contributed to a 15% boost in sales.",
     confidential: false,
-    link:"https://zivcar.co.il/",
-    transitionDelay:0.9,
+    link: "https://zivcar.co.il/",
+    transitionDelay: 0.6,
   };
-  let project_arr = [project1, project2, project3, project4];
+  let project5 = {
+    title: "J6 & Cyber Defense Directorate Media Unit website",
+    tech: "built using React Js",
+    description:
+      "An innovative platform for the J6 & Cyber Defense Directorate Media Unit within the confidential IDF network, serving as a centralized repository for the unit's assets and providing detailed information about the unit.",
+    confidential: true,
+    transitionDelay: 0.8,
+  };
+  let project_arr = [project1, project2, project3, project4, project5];
   return (
     <div id="projects" ref={ref}>
       <ProjectsTitle />
@@ -81,7 +88,7 @@ function ProjectsPage() {
               confidential={proj_obj.confidential}
               link={proj_obj.link}
               visible={visible}
-              transitionDelay = {proj_obj.transitionDelay}
+              transitionDelay={proj_obj.transitionDelay}
             />
           );
         })}

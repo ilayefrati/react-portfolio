@@ -46,7 +46,7 @@ function AboutMePage() {
         into reality.
       </h3>
       <img
-        src="images/about_me_img.png"
+        src={`${process.env.PUBLIC_URL}/images/about_me_img.png`}
         alt="my portfolio picture"
         className={visible ? "slide_left" : ""}
       />

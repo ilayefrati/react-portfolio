@@ -14,12 +14,17 @@ function Project(props) {
       style={{
         backgroundImage: `url(${
           react_background
-            ? "images/project_container2.png"
-            : "images/project_container1.png"
+            ? `${process.env.PUBLIC_URL}/images/SecondBackground.png`
+            : `${process.env.PUBLIC_URL}/images/FirstBackground.png`
         })`,
         transitionDelay: `${props.transitionDelay}s`, // Set transition delay based on prop
       }}
     >
+      {react_background ? (
+        <img src={`${process.env.PUBLIC_URL}/images/ReactTech.png`} className="tech-icons-react"/>
+      ):(
+        <img src={`${process.env.PUBLIC_URL}/images/Tech.png`} className="tech-icons"/>
+      )}
       <h3>{props.title}</h3>
       <p className="project-tech">{props.tech}</p>
       <hr className="project_line" />
